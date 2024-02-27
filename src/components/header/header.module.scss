@@ -1,0 +1,40 @@
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+  }
+
+@import 'variables.module.scss';
+
+.header {
+  background-color: $main-background-color;
+}
+
+.header {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.purptheme{
+  margin-left: auto;
+  padding: 10px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.link {
+  background-color: #8000a0;
+  height: 20px;
+  width: 20px;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+
+//  .body {
+//  color: #fff;
+//  background: none;
+//  background: black;
+//}

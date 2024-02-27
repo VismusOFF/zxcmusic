@@ -1,0 +1,89 @@
+@import '../header/variables.module.scss';
+
+.playbar {
+  background-color: $main-background-color;
+}
+
+.playbar {
+  position: fixed;
+  width: calc(100vw - 40px);
+  height: 70px;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  gap: 30px;
+  flex-wrap: wrap;
+
+
+  & > .togglePlay {
+    transform: scale(120%) !important;
+  }
+
+  & > p {
+    font-size: 14px;
+  }
+
+  & * {
+    color: white !important;
+  }
+
+  @media (max-width: 600px) {
+    height: 120px;  // menetapkan tinggi baru
+    margin: 0px;
+    align-items: center;
+  }
+}
+  
+  .preview {
+    width: 55px;
+    height: 55px;
+    border-radius: 10px;
+    @media (max-width: 600px) {
+      align-self: center;
+      justify-self: center;
+      padding-top: 3px;
+      margin: 0px;
+      padding-top: 3px;
+    }
+  }
+  
+  .credits {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    letter-spacing: 2px;
+  
+    & > p {
+      font-size: 14px;
+    }
+    
+    @media (max-width: 600px) {
+      margin: 0px;
+      font-size: 20px;
+      align-items: center;
+      padding: 0px;
+  
+      & > p {
+        display: none; // Добавьте это, чтобы p не отображался при замере экрана меньше 600
+      }
+    }
+  }
+  
+  .slider {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-basis: 600px;
+    margin-left: auto;
+  
+    @media (max-width: 600px) {
+      width: 100%;  // membuat slider memenuhi seluruh lebar  
+      align-self: flex-start;  // biar slider mulai di baris baru  
+      order: 1;  // memastikan slider ada di bawah elemen lainnya
+      margin: 0px;
+      padding: 0px;
+    }
+  }

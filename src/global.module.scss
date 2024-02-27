@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.wrapper {
+  display: flex;
+  padding: 10px;
+  gap: 20px; // Уменьшаем зазор для мобильных устройств
+  width: 90vw;
+  margin: auto;
+  
+  @media screen and (min-width: 601px) {
+    gap: 60px; // Используем больший зазор для больших экранов
+    width: 600px; // Исользуем фиксированную ширину для больших экранов
+  }
+}
+
+.navigateR {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  margin: 10px;
+  color: #cc0000;
+  :visited {
+    color: #cc0000;
+  }
+}
+
+.navigateP {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  margin: 10px;
+  color: #8000a0;
+  :visited {
+    color: #8000a0;
+  }
+}

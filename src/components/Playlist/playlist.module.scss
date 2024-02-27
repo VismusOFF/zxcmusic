@@ -1,0 +1,22 @@
+.playlist {
+    margin-top: 65px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-height: calc(90vh - 195px);
+    min-width: 300px;
+    width: 320px;
+    overflow: auto;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 20px;
+  
+    @media (max-width: 600px) {
+      height: calc(84vh - 160px); 
+      max-height: calc(85vh - 160px);
+      min-width: 90%;
+      margin: 0;
+      padding: 10px;
+    }
+}
